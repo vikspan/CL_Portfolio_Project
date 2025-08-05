@@ -1,0 +1,14 @@
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header__nav,
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+  }
+}
