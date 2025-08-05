@@ -1,4 +1,6 @@
 @use "./general/variables";
+@use "./general/typography";
+@use "./grid";
 
 body {
   background-color: variables.$primaryColor;
