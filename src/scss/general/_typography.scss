@@ -1,6 +1,14 @@
 @use "./variables";
 
 h1 {
-  font-size: 3.625em;
   color: variables.$headingColor;
+  font-size: 3.625em;
+  font-weight: 700;
+}
+
+h2 {
+  color: variables.$secondaryColor;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
 }
