@@ -1,9 +1,14 @@
 @use "./variables";
+@use "./mixins";
 
 h1 {
   color: variables.$headingColor;
   font-size: 3.625em;
   font-weight: 700;
+
+  @include mixins.mobile {
+    font-size: 3em;
+  }
 }
 
 h2 {
@@ -11,9 +16,17 @@ h2 {
   font-size: 3em;
   font-weight: 700;
   line-height: normal;
+
+    @include mixins.mobile {
+    font-size: 2em;
+  }
 }
 
 h3 {
   color: variables.$secondaryColor;
   font-size: 1.625em;
+
+    @include mixins.mobile {
+    font-size: 1.5em;
+  }
 }
