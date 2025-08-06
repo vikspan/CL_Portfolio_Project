@@ -10,6 +10,8 @@ import sass from "../../assets/sass.svg"
 import git from "../../assets/git.svg"
 import code from "../../assets/code.svg"
 import gith from "../../assets/gith.svg"
+import Projects from "../Components/Projects/Projects";
+import Socials from "../Components/Header/Socials/Socials";
 
 
 const Home = () => {
@@ -30,6 +32,7 @@ const Home = () => {
         ]} />
       </Section>
       <Section type="projects" title="Projects" subtitle="Things I've built so far">
+        <Projects />
       </Section>
       <Header type="footer" />
     </>
