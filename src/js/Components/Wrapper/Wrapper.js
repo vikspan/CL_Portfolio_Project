@@ -1,7 +1,7 @@
 import React from "react";
-import "./_header.scss";
+import "./_wrapper.scss";
 
-const Header = (props) => {
+const Wrapper = (props) => {
   return (
     <div className={props.type}>
       {props.children}
@@ -9,4 +9,4 @@ const Header = (props) => {
   )
 }
 
-export default Header;
+export default Wrapper;

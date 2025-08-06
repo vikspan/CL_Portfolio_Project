@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../Components/Header/Header";
+import Wrapper from "../Components/Wrapper/Wrapper";
 import Banner from "../Components/Banner/Banner";
 import Section from "../Components/Section/Section";
 import Projects from "../Components/Projects/Projects";
-import Socials from "../Components/Header/Socials/Socials";
-import Logo from "../Components/Header/Logo/Logo";
-import Menu from "../Components/Header/Menu/Menu";
+import Socials from "../Components/Wrapper/Socials/Socials";
+import Logo from "../Components/Wrapper/Logo/Logo";
+import Menu from "../Components/Wrapper/Menu/Menu";
 
 import html from "../../assets/html.svg"
 import css from "../../assets/css.svg"
@@ -18,35 +18,23 @@ import gith from "../../assets/gith.svg"
 import gh from "../../assets/github.svg";
 import tw from "../../assets/twitter.svg";
 import ln from "../../assets/linkedin.svg";
+import MainMenu from "../Static/MainMenu";
 
 const Home = () => {
   return (
     <>
-      <Header type="header">
+      <Wrapper type="header">
         <Logo type="header__logo" />
-
         <div className="header__nav">
-          <Menu type="header__nav"
-            items={
-              [
-                { title: "Home", url: "#" },
-                { title: "About", url: "#about" },
-                { title: "Tech Stack", url: "#stack" },
-                { title: "Projects", url: "#projects" },
-                { title: "Contact", url: "#contact" }
-              ]
-            } />
-
+          <MainMenu />
           <Socials type="header__nav" items={[
             { url: "#", src: gh, alt: "GitHub" },
             { url: "#", src: tw, alt: "Twitter" },
             { url: "#", src: ln, alt: "LinkedIn" }
           ]} />
         </div>
-      </Header>
-
+      </Wrapper>
       <Banner />
-
       <Section type="tech" title="My Tech Stack" subtitle="Technologies I've been working with recently">
         <Socials type="tech" items={[
           { url: "#", src: html, alt: "HTML" },
@@ -59,12 +47,10 @@ const Home = () => {
           { url: "#", src: gith, alt: "GitHub" }
         ]} />
       </Section>
-
       <Section type="projects" title="Projects" subtitle="Things I've built so far">
         <Projects />
       </Section>
-
-      <Header type="footer">
+      <Wrapper type="footer">
         <Logo type="footer__logo" />
         <div className="footer__nav">
           <Menu type="footer__nav"
@@ -80,20 +66,14 @@ const Home = () => {
             { url: "#", src: ln, alt: "LinkedIn" }
           ]} />
         </div>
-      </Header>
+      </Wrapper>
       <hr className="footer__divider" />
-      <Header type="footer">
-        <Menu type="footer__nav"
-          items={
-            [
-              { title: "+91 12345 6789", url: "tel:+91 12345 6789" },
-              { title: "info@example.com", url: "mailto:info@example.com" }
-            ]
-          } />
+      <Wrapper type="footer">
+        <MainMenu />
         <div className="footer__copyright">
           <p>Designed and built by <span className="gradient">Pavan MG</span> with <span className="gradient">Love</span> & <span className="gradient">Coffee</span></p>
         </div>
-      </Header>
+      </Wrapper>
     </>
   )
 }
