@@ -9,7 +9,7 @@ const Banner = () => {
         <h1>
           Hi 👋, <br />
           My name is <br />
-          Pavan MG <br />
+          <span className="gradient">Pavan MG</span> <br />
           I build things for web
         </h1>
       </div>
