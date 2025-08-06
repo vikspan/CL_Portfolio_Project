@@ -10,4 +10,9 @@
   .gradient {
     @extend %linear-gradient;
   }
+
+  @include mixins.mobile {
+    flex-direction: column;
+    text-align: center;
+  }
 }
