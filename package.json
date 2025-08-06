@@ -13,6 +13,8 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -49,11 +51,14 @@
   },
   "dependencies": {
     "date-fns": "^4.1.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "scss-reset": "^1.4.6"
   },
   "resolve": {
-    "fallback": {"crypto": false}
+    "fallback": {
+      "crypto": false
+    }
   }
 }
