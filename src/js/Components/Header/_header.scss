@@ -16,9 +16,20 @@
   }
 }
 
-.footer__logo {
-  filter: grayscale(1);
+.footer {
+  .footer__logo {
+    filter: grayscale(1);
+  }
+
+  @include mixins.mobile {
+    .menu {
+      display: none;
+      justify-content: center;
+    }
+  }
+
 }
+
 
 .footer__divider {
   background-color: variables.$footerDivider;
@@ -28,11 +39,15 @@
 }
 
 .footer__copyright {
+  @include mixins.mobile {
+    text-align: center;
+  }
+
   p {
     color: variables.$adjacentColor;
 
     .gradient {
-      @extend %linear-gradient; 
+      @extend %linear-gradient;
     }
   }
 }
