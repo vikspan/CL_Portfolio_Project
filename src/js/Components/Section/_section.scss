@@ -1,4 +1,5 @@
 @use "../../../scss/general/variables";
+@use "../../../scss/general/mixins";
 
 .section {
   text-align: center;
@@ -11,5 +12,9 @@
   .section__subtitle {
     color: variables.$adjacentColor;
     font-size: 2em;
+
+    @include mixins.mobile {
+      font-size: 1.2em;
+    }
   }
 }

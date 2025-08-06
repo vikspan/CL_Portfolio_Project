@@ -1,36 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./_projects.scss";
-import img from "../../../assets/project.png";
 import Project from "./Project/Project";
 
 const Projects = () => {
-  const project = {
-    title: "Project title goes here",
-    description: "This is sample porject description random things are here in description This is sample prppject lorem ipsum generator for dummy content",
-    stack: "HTML, JavaScript, SASS, React",
-    img: img
+  const [projects, setProjects] = useState([]);
+  const api = process.env.API_ENDPOINT;
+  const apiKey = process.env.API_KEY;
+
+  const getProjects = () => {
+    fetch(api, {
+      headers: {
+        "X-SILO-KEY": apiKey
+      }
+    })
+      .then(response => response.json())
+      .then(data => setProjects(data.projects))
+      .catch(err => console.log(err));
   }
+
+  useEffect(() => {
+    getProjects();
+  }, []);
 
   return (
     <div className="projects row">
-      <div className="col-4">
-        <Project project={project} />
-      </div>
-      <div className="col-4">
-        <Project project={project} />
-      </div>
-      <div className="col-4">
-        <Project project={project} />
-      </div>
-      <div className="col-4">
-        <Project project={project} />
-      </div>
-      <div className="col-4">
-        <Project project={project} />
-      </div>
-      <div className="col-4">
-        <Project project={project} />
-      </div>
+      {
+        projects.map((project, i) => (
+          <div key={i} className="col-4">
+            <Project project={project} />
+          </div>
+        ))
+      }
     </div>
   )
 }
