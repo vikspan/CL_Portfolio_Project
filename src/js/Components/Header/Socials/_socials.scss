@@ -1,0 +1,14 @@
+@use "../../../../scss/general/mixins";
+
+@include mixins.mobile {
+  .header__nav__socials {
+    display: none;
+  }
+}
+
+.header__nav__socials,
+.footer__nav__socials {
+  a {
+    margin-right: 1.25em;
+  }
+}

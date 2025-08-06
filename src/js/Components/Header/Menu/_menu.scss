@@ -1,0 +1,19 @@
+@use "../../../../scss/general/variables";
+
+.menu {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+
+    li {
+      margin-right: 2em;
+
+      a {
+        color: variables.$adjacentColor;
+        text-decoration: none;
+        font-family: variables.$secondaryFont;
+      }
+    }
+  }
+}
