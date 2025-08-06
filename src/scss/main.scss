@@ -2,6 +2,7 @@
 @use "./general/variables";
 @use "./general/typography";
 @use "./grid";
+@use "./general/common";
 
 body {
   background-color: variables.$primaryColor;

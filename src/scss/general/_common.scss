@@ -1,0 +1,15 @@
+.tech {
+
+  .tech__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-top: 8em;
+
+    img {
+      margin-right: 6em;
+      margin-bottom: 6em;
+    }
+  }
+}
