@@ -1,10 +1,10 @@
 # Portfolio - React
 
-A simple personal CV webpage built with React, inspired by  [Figma design](https://www.figma.com/community/file/1116246660507537002/developer-portfolio-design).
+This is a React project of a simple personal CV webpage built with React, inspired by  [Figma design](https://www.figma.com/community/file/1116246660507537002/developer-portfolio-design).
 
 ## 🌦️ Features
 
-- About info
+- Tech Stack
 - Projects
 - Contact
 
@@ -20,8 +20,8 @@ Make sure you have:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/vikspan/portfolio
-cd portfolio
+git clone https://github.com/vikspan/CL_Portfolio_Project
+cd CL_Portfolio_Project
 npm install
 # or
 yarn install
@@ -41,4 +41,4 @@ Design source:  [Figma design](https://www.figma.com/community/file/111624666050
 Thanks to the designer for sharing the concept!
 
 ## Demo
-Visit: https://vikspan.github.io/portfolio/
+Visit: https://vikspan.github.io/CL_Portfolio_Project

@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vikspan/portfolio.git"
+    "url": "git+https://github.com/vikspan/CL_Portfolio_Project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vikspan/portfolio/issues"
+    "url": "https://github.com/vikspan/CL_Portfolio_Project/issues"
   },
-  "homepage": "https://vikspan.github.io/portfolio/",
+  "homepage": "https://vikspan.github.io/CL_Portfolio_Project/",
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
