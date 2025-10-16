@@ -52,7 +52,7 @@ const Home = () => {
       </Section>
       <Wrapper type="footer">
         <Logo type="footer__logo" />
-        <div className="footer__nav">
+        <div className="footer__nav" id="contact">
           <Menu type="footer__nav"
             items={
               [

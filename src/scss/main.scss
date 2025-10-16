@@ -5,9 +5,17 @@
 @use "./grid";
 @use "./general/common";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: variables.$primaryColor;
   font-family: variables.$primaryFont;
   margin-top: 3em;
   margin-bottom: 3em;
+
+  @include mixins.mobile {
+    margin-top: 2em;
+  }
 }

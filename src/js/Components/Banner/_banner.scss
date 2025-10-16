@@ -11,9 +11,24 @@
     @extend %linear-gradient;
   }
 
+  @include mixins.tablet {
+    margin-top: 5em;
+    margin-bottom: 4em;
+
+    h1 {
+      font-size: 3em;
+    }
+  }
+
   @include mixins.mobile {
     flex-direction: column;
     text-align: center;
     gap: 3em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+    h1 {
+      font-size: 2.5em;
+    }
   }
 }

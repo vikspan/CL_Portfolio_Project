@@ -8,6 +8,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin-top: 30px;
+
+  @include mixins.tablet {
+    margin-top: 7em;
+    margin-bottom: 7em;
+  }
+
+  @include mixins.mobile {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
 
   .section__subtitle {
     color: variables.$adjacentColor;

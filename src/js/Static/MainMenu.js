@@ -7,8 +7,7 @@ const MainMenu = () => {
       items={
         [
           { title: "Home", url: "#" },
-          { title: "About", url: "#about" },
-          { title: "Tech Stack", url: "#stack" },
+          { title: "Tech Stack", url: "#tech" },
           { title: "Projects", url: "#projects" },
           { title: "Contact", url: "#contact" }
         ]
